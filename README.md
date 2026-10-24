@@ -29,5 +29,13 @@ So far this fork only adds sprinting, crouching, a ton of animations and a fixed
       <br />
       <b>Reflection Plugin</b>
     </td>
+    <td align="center">
+      <a href="https://github.com/jasn7135">
+        <img src="https://github.com/jasn7135.png" width="100px;" alt="jasn7135 Profile"/><br />
+        <sub><b>jasn7135</b></sub>
+      </a>
+      <br />
+      <b>Fortnite Heightmaps</b>
+    </td>
   </tr>
 </table>
