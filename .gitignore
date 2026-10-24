@@ -1,0 +1,47 @@
+# User-specific & local editor files
+.vs/
+.idea/
+.vscode/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.cache
+*.C.Unreal.ini
+
+# Unreal Engine generated directories
+Build/
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# Ignore built plugins
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+
+# Package output & archives
+/Paks/
+*.pak
+*.zip
+*.7z
+*.rar
+
+# Xcode / Mac build files
+*.xcodeproj
+*.xcworkspace
+
+# Android/iOS specific build artifacts
+/Build/Android/
+/Build/IOS/
+
+# Crash reports & log files
+*.log
+/Saved/Logs/
+/Saved/Crashes/
+
+# External assets / source files not needed in source control
+*.psd
+*.blend
+*.fbx
+*.obj

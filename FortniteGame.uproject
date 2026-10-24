@@ -22,11 +22,7 @@
 			]
 		},
 		{
-			"Name": "WindowsDialogBox",
-			"Enabled": true
-		},
-		{
-			"Name": "JsonAsAsset",
+			"Name": "AnimationBudgetAllocator",
 			"Enabled": true
 		}
 	]
