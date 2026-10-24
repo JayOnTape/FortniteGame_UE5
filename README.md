@@ -7,7 +7,7 @@
 This is a fork of the incomplete **"Fortnite UE5 Remake"** by **[Project164]([https://github.com/4sval/FModel](https://github.com/Titox122))** that fixes a lot of the issues with the original project and adds some polish, nothing too major! I am still working on it as of now, so there aren't any changes right now.
 
 ## What's the difference between the original and this?
-So far this fork only adds sprinting, crouching, a ton of animations and a fixed main player skeleton and a improved animation blueprint, I may add more in future.
+So far this fork only adds sprinting, crouching, a ton of animations and a fixed main player skeleton, improved animation blueprint, fixed materials and landscape for Athena_Terrain.
 
 # Credits:
 
