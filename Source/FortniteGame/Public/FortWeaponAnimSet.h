@@ -16,194 +16,189 @@ class FORTNITEGAME_API UFortWeaponAnimSet : public UPrimaryDataAsset
 
 public:
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-bool bShouldUseIK;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Settings")
+	bool bShouldUseIK;
 
+	// --- Targeting Aim Offset ---
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Targeting")
+	class UAimOffsetBlendSpace* TargetingAimOffset_Male;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAimOffsetBlendSpace*TargetingAimOffset;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Targeting")
+	class UAimOffsetBlendSpace* TargetingAimOffset_Female;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAimOffsetBlendSpace*NonTargetingAimOffset;
+	// --- Non-Targeting Aim Offset ---
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Targeting")
+	class UAimOffsetBlendSpace* NonTargetingAimOffset_Male;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*RelaxedPose;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Targeting")
+	class UAimOffsetBlendSpace* NonTargetingAimOffset_Female;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*RelaxedPoseLevel2;
+	// --- Relaxed Pose ---
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Relaxed")
+	class UAnimSequence* RelaxedPose_Male;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAimOffsetBlendSpace*RelaxedAimOffset;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Relaxed")
+	class UAnimSequence* RelaxedPose_Female;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UBlendSpace*JogAdditiveBlendSpace;
+	// --- Relaxed Aim Offset ---
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Relaxed")
+	class UAimOffsetBlendSpace* RelaxedAimOffset_Male;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UBlendSpace*JogCoreBlendSpace;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Relaxed")
+	class UAimOffsetBlendSpace* RelaxedAimOffset_Female;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UBlendSpace*JogAdditiveBlendSpaceRelaxed;
+	// --- Jog Additive Blend Space ---
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Locomotion")
+	class UBlendSpace* JogAdditiveBlendSpace_Male;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UBlendSpace*JogAdditiveBlendSpaceRelaxedLevel2;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Locomotion")
+	class UBlendSpace* JogAdditiveBlendSpace_Female;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*SprintAnimation;
+	// --- Jog Core Blend Space ---
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Locomotion")
+	class UBlendSpace* JogCoreBlendSpace_Male;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*CrouchTargetingPose;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Locomotion")
+	class UBlendSpace* JogCoreBlendSpace_Female;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*CrouchNonTargetingPose;
+	// --- Jog Additive Blend Space Relaxed ---
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Locomotion")
+	class UBlendSpace* JogAdditiveBlendSpaceRelaxed_Male;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*CrouchRelaxedPose;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Locomotion")
+	class UBlendSpace* JogAdditiveBlendSpaceRelaxed_Female;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UBlendSpace*CrouchCoreTargetingBlendSpace;
+	// --- Sprint Animation ---
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Locomotion")
+	class UAnimSequence* SprintAnimation_Male;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UBlendSpace*CrouchCoreNonTargetingBlendSpace;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Locomotion")
+	class UAnimSequence* SprintAnimation_Female;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UBlendSpace*CrouchWalkAdditiveBlendSpace;
+	// --- Crouch Targeting Pose ---
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Crouch")
+	class UAnimSequence* CrouchTargetingPose_Male;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UBlendSpace*CrouchJogAdditiveBlendSpace;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Crouch")
+	class UAnimSequence* CrouchTargetingPose_Female;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UBlendSpace*CrouchJogAdditiveBlendSpaceRelaxed;
+	// --- Crouch Non-Targeting Pose ---
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Crouch")
+	class UAnimSequence* CrouchNonTargetingPose_Male;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*CrouchSprintAnimation;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Crouch")
+	class UAnimSequence* CrouchNonTargetingPose_Female;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*IdleNoise_AR_DownSights;
+	// --- Crouch Relaxed Pose ---
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Crouch")
+	class UAnimSequence* CrouchRelaxedPose_Male;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*SwimJumpSurfaceEndAdditve;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Crouch")
+	class UAnimSequence* CrouchRelaxedPose_Female;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*SwimJumpSurfaceLoopAdditve;
+	// --- Crouch Core Targeting Blend Space ---
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Crouch")
+	class UBlendSpace* CrouchCoreTargetingBlendSpace_Male;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*SwimJumpFallLoopAdditve;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Crouch")
+	class UBlendSpace* CrouchCoreTargetingBlendSpace_Female;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*SwimJumpStartLoopAdditve;
+	// --- Crouch Core Non-Targeting Blend Space ---
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Crouch")
+	class UBlendSpace* CrouchCoreNonTargetingBlendSpace_Male;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*SwimJumpStartAdditve;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Crouch")
+	class UBlendSpace* CrouchCoreNonTargetingBlendSpace_Female;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*FlyModeLoopAdditive;
+	// --- Crouch Walk Additive Blend Space ---
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Crouch")
+	class UBlendSpace* CrouchWalkAdditiveBlendSpace_Male;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*FlyModeStartAdditive;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Crouch")
+	class UBlendSpace* CrouchWalkAdditiveBlendSpace_Female;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*ZipLineStartAdditve;
+	// --- Crouch Jog Additive Blend Space ---
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Crouch")
+	class UBlendSpace* CrouchJogAdditiveBlendSpace_Male;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*JetPackJumpAdditve;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Crouch")
+	class UBlendSpace* CrouchJogAdditiveBlendSpace_Female;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*JetPackStartAdditve;
+	// --- Crouch Jog Additive Blend Space Relaxed ---
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Crouch")
+	class UBlendSpace* CrouchJogAdditiveBlendSpaceRelaxed_Male;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*FallAdditive;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Crouch")
+	class UBlendSpace* CrouchJogAdditiveBlendSpaceRelaxed_Female;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*JumpLoopAdditive;
+	// --- Crouch Sprint Animation ---
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Crouch")
+	class UAnimSequence* CrouchSprintAnimation_Male;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*JumpUpAdditive;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Crouch")
+	class UAnimSequence* CrouchSprintAnimation_Female;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*IdleNoise;
+	// --- Idle Noise AR Down Sights ---
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Idle")
+	class UAnimSequence* IdleNoise_AR_DownSights_Male;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*TargetingPose;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Idle")
+	class UAnimSequence* IdleNoise_AR_DownSights_Female;
 
+	// --- Fly Mode Loop Additive ---
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Movement Extras")
+	class UAnimSequence* FlyModeLoopAdditive_Male;
 
-//pronto
- 
-/*UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*NonTargetingPose;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Movement Extras")
+	class UAnimSequence* FlyModeLoopAdditive_Female;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*RelaxedPose;
+	// --- Fly Mode Start Additive ---
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Movement Extras")
+	class UAnimSequence* FlyModeStartAdditive_Male;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*RelaxedPose;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Movement Extras")
+	class UAnimSequence* FlyModeStartAdditive_Female;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*RelaxedPose;
+	// --- Zipline Start Additive ---
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Movement Extras")
+	class UAnimSequence* ZipLineStartAdditve_Male;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*RelaxedPose;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Movement Extras")
+	class UAnimSequence* ZipLineStartAdditve_Female;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*RelaxedPose;
+	// --- Fall Additive ---
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Jump")
+	class UAnimSequence* FallAdditive_Male;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*RelaxedPose;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Jump")
+	class UAnimSequence* FallAdditive_Female;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*RelaxedPose;
+	// --- Jump Loop Additive ---
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Jump")
+	class UAnimSequence* JumpLoopAdditive_Male;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*RelaxedPose;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Jump")
+	class UAnimSequence* JumpLoopAdditive_Female;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*RelaxedPose;
+	// --- Jump Up Additive ---
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Jump")
+	class UAnimSequence* JumpUpAdditive_Male;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*RelaxedPose;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Jump")
+	class UAnimSequence* JumpUpAdditive_Female;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*RelaxedPose;
+	// --- Idle Noise ---
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Idle")
+	class UAnimSequence* IdleNoise_Male;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*RelaxedPose;
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Idle")
+	class UAnimSequence* IdleNoise_Female;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*RelaxedPose;
+	// --- Targeting Pose ---
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Targeting")
+	class UAnimSequence* TargetingPose_Male;
 
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*RelaxedPose;
-
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*RelaxedPose;
-
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*RelaxedPose;
-
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*RelaxedPose;
-
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*RelaxedPose;
-
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*RelaxedPose;
-
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*RelaxedPose;
-
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*RelaxedPose;
-
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*RelaxedPose;
-
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*RelaxedPose;
-
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*RelaxedPose;
-
-UPROPERTY(BlueprintReadWrite, EditAnywhere)
-    class UAnimSequence*RelaxedPose;*/ 
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Animation | Targeting")
+	class UAnimSequence* TargetingPose_Female;
 
 };

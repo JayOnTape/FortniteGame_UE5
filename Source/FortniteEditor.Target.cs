@@ -3,9 +3,9 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class FortniteGameEditorTarget : TargetRules
+public class FortniteEditorTarget : TargetRules
 {
-	public FortniteGameEditorTarget( TargetInfo Target) : base(Target)
+	public FortniteEditorTarget( TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.V4;
