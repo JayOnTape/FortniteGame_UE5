@@ -3,6 +3,8 @@
 > [!WARNING]
 > Portions of the materials used are trademarks and/or copyrighted works of Epic Games, Inc. All rights reserved by Epic. This material is not official and is not endorsed by Epic.
 
+If you use this for anything, credit me. 
+
 ## What Is This?
 This is a fork of the incomplete **"Fortnite UE5 Remake"** by **[Project164]([https://github.com/4sval/FModel](https://github.com/Titox122))** that fixes a lot of the issues with the original project and adds some polish, nothing too major! I am still working on it as of now, so there aren't any changes right now.
 
